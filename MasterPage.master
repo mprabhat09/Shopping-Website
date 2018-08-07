@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/left2.ascx" TagName="left1" TagPrefix="uc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title></title>
+	<link href="css/balancestyle.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .style1
+        {
+            height: 81px;
+        }
+    </style>
+
+</head>
+<body>
+	<form id="form1" runat="server">
+	<div>
+		`<table width="950px" border="0" align="center" cellpadding="0" cellspacing="0" class="tbl_border">
+			<tr>
+				<td>
+					<table width="950px" border="0" cellspacing="0" cellpadding="4">
+						<tr>
+							<td valign="top"   colspan="2" class="head">Myfashion-ONline Shopping
+					 
+							</td>
+						</tr>
+						<tr>
+							<td align="left" colspan="2" valign="top" class="style1">
+								<font size="3pt"><span class="h2">Welcome:
+									<asp:Label ID="lblName" runat="server" Text=""></asp:Label></font> &nbsp; &nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td width="150" valign="top" align="left">
+								<uc1:left1 ID="Left1" runat="server" />
+							</td>
+							<td width="800" valign="top" align="left" style="height: 500px">
+								<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+								</asp:ContentPlaceHolder>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" scope="col" colspan="2">
+								<img src="images/1000_header.jpg" alt="" width="1000" height="77" />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	</form>
+</body>
+</html>

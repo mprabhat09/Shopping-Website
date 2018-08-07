@@ -1,0 +1,420 @@
+body {margin:0;
+}
+ .banner
+{
+	position: relative;
+	margin: 0px;
+	padding: 0px; /*background: #E56717;*/
+	background: transparent url('../images/1000_header.jpg') no-repeat scroll right top;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-left: 6px;
+}
+.tbl_border{
+border-width:1px;
+border-style:solid;
+border-color:#efefef;
+}
+table{
+		
+	}
+	table td{ 
+		border: 1px solid #efefef;
+	margin-left: 40px;
+}
+	/* provide some minimal visual accomodation for IE8 and below */
+	table tr{
+		font-family:Tahoma;
+color:#000000;
+background-color:#eeebeb;
+font-size:12px;
+border:thin solid #d6d3d3;
+text-decoration: none;
+font-weight:normal;
+	}
+	/*  Define the background color for all the ODD background rows  */
+	table tr:nth-child(odd){ 
+	font-family:Tahoma;
+color:#000000;
+background-color:#eeebeb;
+font-size:12px;
+border:thin solid #d6d3d3;
+text-decoration: none;
+font-weight:normal;
+	}
+	/*  Define the background color for all the EVEN background rows  */
+	table tr:nth-child(even){
+	font-family:Tahoma;
+color:#000000;
+background-color:#f7f4f4;
+font-size:12px;
+border:thin solid #d6d3d3;
+text-decoration: none;
+font-weight:normal;
+	}
+
+
+
+  .h1{
+font-family:Tahoma;
+font-size:12px;
+font-weight:bold;
+color:#a44201;
+text-decoration:none;
+}
+.h2{
+font-family:Tahoma;
+font-size:12px;
+font-weight:bold;
+color:#5e0102;
+line-height:20px;
+}
+.h3{
+font-family:Tahoma;
+font-size:14px;
+font-weight:bold;
+color:#181817;
+}
+.whitecolour{
+color:#ffffff;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+font-variant:normal;
+font-weight:bold;
+text-decoration:none;
+font-style:normal;
+}
+.whitecolour:visited {
+color:#ffffff;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+font-weight:bold;
+font-variant:normal;
+font-style:normal;
+text-decoration:none;
+}
+.whitecolour:hover {
+color:#ffffff;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+font-weight:bold;
+font-variant:normal;
+font-style:normal;
+text-decoration:none;
+}
+.bg{background:#ffde96;}
+
+.whitecolour:active {
+color:#0099FF;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight:bold;
+font-variant:normal;
+font-style:normal;
+text-decoration:none;
+}
+.text2{
+font-family: Tahoma;
+font-size:13px;
+font-weight:normal;
+color:#000000;
+text-align:justify;
+line-height:26px;
+text-decoration:none;
+padding-left:3px;
+}
+a.text2:hover{
+font-family: Tahoma;
+font-size:13px;
+font-weight:normal;
+color:#000000;
+text-align:justify;
+line-height:26px;
+text-decoration: underline;
+padding-left:3px;
+}
+.navibg{
+color:#000000;
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+font-weight:normal;
+font-variant:normal;
+text-decoration:none;
+line-height:20px;
+}
+.navibg:visited {
+color:#000000;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight:normal;
+font-variant:normal;
+text-decoration:none;
+line-height:20px;
+}
+.navibg:hover {
+color:#205006;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight:normal;
+font-variant:normal;
+text-decoration:none;
+line-height:20px;
+}
+
+.navibg:active {
+color:#0099FF;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight:normal;
+font-variant:normal;
+}
+.box_text{
+font-family:Tahoma;
+color:#000000;
+background-color:#eeebeb;
+font-size:12px;
+border:thin solid #d6d3d3;
+text-decoration: none;
+font-weight:normal;
+}
+.box_text2{
+font-family:Tahoma;
+color:#000000;
+background-color:#f7f4f4;
+font-size:12px;
+border:thin solid #d6d3d3;
+text-decoration: none;
+font-weight:normal;
+}
+.box{
+background-image:url(../images/body.jpg);
+width:856px;
+height:326px;
+}
+.box7{
+background-image:url(../images/body7.jpg);
+
+}
+.ourservices {
+font-size:12px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-style:normal;
+color: #333333;
+line-height:16px;
+}
+ .button {
+font-family:Tahoma;
+color:#000000;
+background-color:#dcdcde;
+font-size:13px;
+border:1 solid #d6d3d3;
+text-decoration: none;
+}
+.button:hover {
+font-family:Tahoma;
+color:#000000;
+background-color:#ffffff;
+font-size:13px;
+border:1 solid #d6d3d3;
+text-decoration: none;
+}
+.buttoncolor {
+
+font-size:13px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color:#ffffff;
+font-style: normal;
+font-weight:bold;
+font-variant: normal;
+background-color:#c74d1c;
+background-color:#c74d1c;
+border-bottom:solid 1px ;
+border-top:solid 1px #5e0102;
+border-left:solid 1px #5e0102;
+border-right:solid 1px #5e0102;
+text-decoration: none;
+width:200px;
+padding-left:10px;
+}
+.buttoncolor:hover {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+color:#ffffff;
+font-style: normal;
+font-weight:bold;
+font-variant: normal;
+background-color:#c74d1c;
+padding-left:10px;
+background-color:#c74d1c;
+border-bottom:solid 1px ;
+border-top:solid 1px #5e0102;
+border-left:solid 1px #5e0102;
+border-right:solid 1px #5e0102;
+width:200px;
+}
+/* SpryAccordion.css - Revision: Spry Preview Release 1.4 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* This is the selector for the main Accordion container. For our default style,
+ * we draw borders on the left, right, and bottom. The top border of the Accordion
+ * will be rendered by the first AccordionPanelTab which never moves.
+ *
+ * If you want to constrain the width of the Accordion widget, set a width on
+ * the Accordion container. By default, our accordion expands horizontally to fill
+ * up available space.
+ *
+ * The name of the class ("Accordion") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style the
+ * Accordion container.
+ */
+.Accordion {
+	overflow: hidden;
+	font-family:Tahoma;
+	padding-left:55px;
+}
+
+/* This is the selector for the AccordionPanel container which houses the
+ * panel tab and a panel content area. It doesn't render visually, but we
+ * make sure that it has zero margin and padding.
+ *
+ * The name of the class ("AccordionPanel") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel container.
+*/
+.AccordionPanel {
+	margin: 0px;
+	padding-left:55px;
+	font-family:Tahoma;
+	font-size:13px;
+	font-style:normal;
+	font-variant:inherit;
+	color:#000000;
+	background-color:#c74d1c;
+}
+
+/* This is the selector for the AccordionPanelTab. This container houses
+ * the title for the panel. This is also the container that the user clicks
+ * on to open a specific panel.
+ *
+ * The name of the class ("AccordionPanelTab") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel tab container.
+ */
+.AccordionPanelTab {
+	
+	margin: 0px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+color:#ffffff;
+font-style: normal;
+font-weight:bold;
+font-variant: normal;
+padding-left:55px;
+
+}
+
+/* This is the selector for a Panel's Content area. It's important to note that
+ * you should never put any padding on the panel's content area if you plan to
+ * use the Accordions panel animations. Placing a non-zero padding on the content
+ * area can cause the accordion to abruptly grow in height while the panels animate.
+ *
+ * Anyone who styles an Accordion *MUST* specify a height on the Accordion Panel
+ * Content container.
+ *
+ * The name of the class ("AccordionPanelContent") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * accordion panel content container.
+ */
+.AccordionPanelContent {
+	overflow: auto;
+	padding-left:55px;
+color:White ;
+font-weight:bold;
+border-bottom:solid 1px #5e0102;
+border-top:solid 1px #5e0102;
+border-left:solid 1px #5e0102;
+border-right:solid 1px #5e0102;
+background-color:#c74d1c;
+}
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open. The class "AccordionPanelOpen" is programatically added and removed
+ * from panels as the user clicks on the tabs within the Accordion.
+ */
+.AccordionPanelOpen .AccordionPanelTab {
+	background-color:Green;
+}
+
+/* This is an example of how to change the appearance of the panel tab as the
+ * mouse hovers over it. The class "AccordionPanelTabHover" is programatically added
+ * and removed from panel tab containers as the mouse enters and exits the tab container.
+ */
+.AccordionPanelTabHover {
+	color: #ffffff;
+}
+.AccordionPanelOpen .AccordionPanelTabHover {
+	color: #ffffff;
+}
+
+/* This is an example of how to change the appearance of all the panel tabs when the
+ * Accordion has focus. The "AccordionFocused" class is programatically added and removed
+ * whenever the Accordion gains or loses keyboard focus.
+ */
+.AccordionFocused .AccordionPanelTab {
+	background-color: #000000;
+}
+
+/* This is an example of how to change the appearance of the panel tab that is
+ * currently open when the Accordion has focus.
+ */
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab {
+	background-color: #000000;
+}
+ 
+.head
+{
+	background-image: url('../images/1000_header.jpg');
+	font-family: 'Arial Black';
+	font-size: medium;
+	font-weight: bold;
+	font-style: oblique;
+	font-variant: inherit;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	height :100px;
+}
+
+ 
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 940px;
+}
+
+h2,h3{text-align:center;}
+h2
+{
+    
+    color:White;
+    font-weight:bold;
+    font-size:4em;
+    }
+    h3
+    {
+        
+        color:brown;
+        font-weight:bold;
+        font-size:2em;
+        }
+
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#333;
+	font-size:14px;
+}

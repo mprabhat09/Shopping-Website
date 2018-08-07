@@ -1,0 +1,165 @@
+﻿SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[CategoryMaster]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[CategoryMaster](
+	[CategoryId] [int] IDENTITY(1,1) NOT NULL,
+	[Category] [varchar](150) NULL,
+ CONSTRAINT [PK_CategoryMaster] PRIMARY KEY CLUSTERED 
+(
+	[CategoryId] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[CityMaster]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[CityMaster](
+	[CityId] [int] IDENTITY(1,1) NOT NULL,
+	[StateId] [int] NULL,
+	[City] [varchar](50) NULL,
+ CONSTRAINT [PK_CityMaster] PRIMARY KEY CLUSTERED 
+(
+	[CityId] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[CustomerMaster]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[CustomerMaster](
+	[CustId] [int] IDENTITY(1,1) NOT NULL,
+	[FName] [varchar](50) NULL,
+	[MName] [varchar](50) NULL,
+	[LName] [varchar](50) NULL,
+	[State] [int] NULL,
+	[City] [int] NULL,
+	[Mobile] [varchar](12) NULL,
+	[EmailId] [varchar](100) NULL,
+	[Password] [varchar](50) NULL,
+	[Address] [varchar](500) NULL,
+ CONSTRAINT [PK_CustomerMaster] PRIMARY KEY CLUSTERED 
+(
+	[CustId] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[ProductMaster]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[ProductMaster](
+	[ProductId] [int] IDENTITY(1,1) NOT NULL,
+	[SupplierId] [int] NULL,
+	[CategoryId] [int] NULL,
+	[ProductName] [varchar](50) NULL,
+	[Url] [varchar](600) NULL,
+	[Details] [varchar](100) NULL,
+ CONSTRAINT [PK_ProductMaster] PRIMARY KEY CLUSTERED 
+(
+	[ProductId] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[StateMaster]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[StateMaster](
+	[StateId] [int] IDENTITY(1,1) NOT NULL,
+	[State] [varchar](50) NULL,
+ CONSTRAINT [PK_StateMaster] PRIMARY KEY CLUSTERED 
+(
+	[StateId] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SubProductMaster]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[SubProductMaster](
+	[SubProductId] [int] IDENTITY(1,1) NOT NULL,
+	[ProductId] [int] NULL,
+	[SubProductName] [varchar](50) NULL,
+	[URL] [varchar](50) NULL,
+	[Details] [varchar](50) NULL,
+	[Price] [int] NULL,
+ CONSTRAINT [PK_SubProductMaster] PRIMARY KEY CLUSTERED 
+(
+	[SubProductId] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[CartDetails]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[CartDetails](
+	[CartId] [int] IDENTITY(1,1) NOT NULL,
+	[SubProductId] [int] NULL,
+	[CustId] [int] NULL,
+	[qty] [varchar](50) NULL CONSTRAINT [DF_CartDetails_qty]  DEFAULT (getdate()),
+	[CreatedDate] [datetime] NULL CONSTRAINT [DF_CartDetails_CreatedDate]  DEFAULT (getdate()),
+	[CartNo] [varchar](50) NULL,
+ CONSTRAINT [PK_CartDetails] PRIMARY KEY CLUSTERED 
+(
+	[CartId] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PaymentMaster]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[PaymentMaster](
+	[PaymentId] [int] IDENTITY(1,1) NOT NULL,
+	[CartNo] [varchar](50) NULL,
+	[Amt] [int] NULL,
+	[PayBy] [int] NULL,
+	[PayDate] [datetime] NULL CONSTRAINT [DF_PaymentMaster_PayDate]  DEFAULT (getdate()),
+	[CardNo] [varchar](50) NULL,
+ CONSTRAINT [PK_PaymentMaster] PRIMARY KEY CLUSTERED 
+(
+	[PaymentId] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Admin]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[Admin](
+	[AdminId] [int] NOT NULL,
+	[AdminName] [varchar](50) NULL,
+	[AdminPassword] [varchar](50) NULL
+) ON [PRIMARY]
+END
